@@ -179,7 +179,7 @@ Typography:
 			border: 2px solid #000;
 			background-color: #FFF;
 			width: auto;
-			height: 400px;
+			height: 450px;
 		}
 		.table-groups div p {
 			/*display: inline;*/
@@ -190,7 +190,7 @@ Typography:
 			display: block;
 			margin: auto;
 			width: auto;
-			height: 40%; 
+			height: 60%; 
 		}
 
 		#frc-groups {
@@ -203,6 +203,14 @@ Typography:
 				"Programming     Planning"
 				"Electrical      Spirit"
 				"Strategy        .";
+		}
+		#steam-volunteer-groups {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas:
+				"Mentoring		Competitions"
+				"Camps			Workshop"
+				"Events			Sporting";
 		}
 		
 		
