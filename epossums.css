@@ -323,7 +323,7 @@ Typography:
 		.hero {
 			display: none;
 		}
-		#frc-groups div img {
+		.table-groups div img {
 			display: none;
 		}
 		main img {
@@ -360,6 +360,30 @@ Typography:
 			margin-right: auto;
 			width: 80%;
 			height: auto;
+		}
+
+		.table-groups div {
+			height: 300px;
+		}
+		#frc-groups {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+								1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas: 
+				"Design"          "Finances"
+				"Manufacturing"   "Media"
+				"Mechanical"      "Presentation"
+				"Programming"     "Planning"
+				"Electrical"      "Spirit"
+				"Strategy"        ".";
+		}
+		#steam-volunteer-groups {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas:
+				"Mentoring"		"Competitions"
+				"Camps"			"Workshop"
+				"Events"		"Sporting";
 		}
 	
 }
