@@ -169,11 +169,31 @@ Typography:
 		
 	/* Page-Specific Areas */
 		
-		#frc-groups {
+		.table-groups {
 			margin: 1% auto auto auto;
 			display: grid;
 			width: 80%;
 			height: auto;
+		}
+		.table-groups div {
+			border: 2px solid #000;
+			background-color: #FFF;
+			width: auto;
+			height: 400px;
+		}
+		.table-groups div p {
+			/*display: inline;*/
+			width: 80%;
+			margin: auto;
+		}
+		.table-groups div img {
+			display: block;
+			margin: auto;
+			width: auto;
+			height: 40%; 
+		}
+
+		#frc-groups {
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 			grid-template-areas: 
@@ -185,25 +205,7 @@ Typography:
 				"Strategy        .";
 		}
 		
-		#frc-groups div {
-			border: 2px solid #000;
-			background-color: #FFF;
-			width: auto;
-			height: 400px;
-		}
 		
-		#frc-groups div p {
-			/*display: inline;*/
-			width: 80%;
-			margin: auto;
-		}
-		
-		#frc-groups div img {
-			display: block;
-			margin: auto;
-			width: auto;
-			height: 40%; 
-		}
 		
 		.column-left {
 			width: 30%;
