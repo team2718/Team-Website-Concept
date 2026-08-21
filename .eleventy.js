@@ -1,7 +1,8 @@
 module.exports = function(eleventyConfig) {
   // Tell 11ty to directly copy your CSS and images to the output folder
-  eleventyConfig.addPassthroughCopy("css"); 
-  eleventyConfig.addPassthroughCopy("images"); 
+  eleventyConfig.addPassthroughCopy("src/css"); 
+  eleventyConfig.addPassthroughCopy("src/images"); 
+  eleventyConfig.addPassthroughCopy("src/about/images"); 
 
   return {
     dir: {
