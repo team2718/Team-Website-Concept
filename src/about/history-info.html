@@ -10,62 +10,23 @@ Last modified 8/20/2026 by Caleb Winterscheidt
 	
 <h1>FRC 2718 History</h1>
 
-<br><h3>2024 &dash; Crescendo</h3>
-<p>Robot: Didelphis III</p>
+
+{% for season in collections.seasonAccomplishments %}
+
+<br><h3>{{season.data.year}} &dash; {{season.data.title}}</h3>
+<p>Robot: {{season.data.robot}}</p>
 <ul>
-	<li><a href="https://cad.onshape.com/documents/165dbd4c3c4258159156f89a/w/
-		2970ae784eaa9bd09753f04f/e/1e450da20954ec5e27493be1">CAD</a></li>
-	<li><a href="https://github.com/Team-OKC-Robotics/FRC-2024">GitHub code repository</a></li>
-	<li><a href="https://teamokcrobotics.com/wp-content/uploads/2024/09/
-		DIDELPHIS-FRC-2718-robot-design-2024.pdf">Design Documentation</a></li>
-	<li><a href="https://www.thebluealliance.com/team/2718/2024">Match videos</a></li>
+	<li><a href={{season.data.cad}}>CAD</a></li>
+	<li><a href={{season.data.github}}>GitHub code repository</a></li>
+	<li><a href={{season.data.documentation}}>Design Documentation</a></li>
+	<li><a href={{season.data.matches}}>Match videos</a></li>
 </ul>
 
 <p>Team Accomplishments:</p>
 <ul>
-	<li>FIRST Championship: Archimedes Championship Division Winning Alliance; Einstein 3rd place 
-		alliance; Top 4-piece autonomous at the world championship (35 of 36 shots made).</li>
-	<li>Oklahoma Regional: Engineering Inspiration Award; 4th place alliance</li>
-	<li>Central Missouri Regional: Captain of the 2nd Alliance</li>
-	<li>STEMGals (offseason): Finalist Alliance Captain (alliance #6)</li>
-	<li>NTX Tournament of Robots (offseason): Finalist Alliance Captain (alliance #2)</li>
-	<li>Cowtown Throwdown (offseason): Winning Alliance</li>
+	{% for accomplishment in season.data.accomplishments %}
+		<li>{{accomplishment}}</li>
+	{% endfor %}
 </ul>
 
-
-<br><h3>2023 &dash; Charged Up!</h3>
-<p>Robot: Didelphis II</p>
-<ul>
-	<li><a href="https://cad.onshape.com/documents/cb385c6cbb4b927041638e83/w/
-		363e7c979226a3765374c5e2/e/2f814d746da182cf3b224cac">CAD</a></li>
-	<li><a href="https://github.com/Team-OKC-Robotics/FRC-2023">GitHub code repository</a></li>
-	<li><a href="https://www.thebluealliance.com/team/2718/2023">Match videos</a></li>
-</ul>
-
-<p>Team Accomplishments:</p>
-<ul>
-	<li>FIRST Championship: Judges Award (for our unique community outreach)</li>
-	<li>Oklahoma Regional: Engineering Inspiration Award; 4th place alliance</li>
-	<li>Greater Kansas City Regional: Gracious Professionalism Award</li>
-</ul>
-
-
-<br><h3>2022 &dash; Rapid React</h3>
-<p>Robot: Didelphis I</p>
-<ul>
-	<li><a href="https://cad.onshape.com/documents/7efc188f1b8f976cb57b866b/w/
-		93eddced5701f8ca49a7450a/e/5ca18333b1b92f213fb7e053">CAD</a></li>
-	<li><a href="https://github.com/Team-OKC-Robotics/FRC-2022/">GitHub code repository</a></li>
-	<li><a href="https://teamokcrobotics.com/wp-content/uploads/2024/09/Robot-summary-sheet-2022.pdf">
-		Design Documentation</a></li>
-	<li><a href="https://www.thebluealliance.com/team/2718/2022">Match videos</a></li>
-</ul>
-
-<p>Team Accomplishments:</p>
-<ul>
-	<li>Team Founded!
-	<li>FIRST Championship qualifying team in out first season!</li>
-	<li>Oklahoma Regional: Regional Finalists, Entrepreneurship Award</li>
-	<li>Greater Kansas City Regional: Regional Engineering Inspiration Award, 1st pick of 5th alliance</li>
-	<li>Green Country Regional: FIRST Dean’s List Finalist Award (Eli Tyler)</li>
-</ul>
+{% endfor %}

@@ -29,7 +29,7 @@ Typography:
 			background-repeat: repeat-x;
 			background-attachment: fixed;
 		}
-		wrapper {
+		.wrapper {
 			max-width: 100%;
 			max-height: 100%;
 			overflow: hidden;
@@ -233,6 +233,15 @@ Typography:
 		.column-right img {
 			width: 100%;
 			height: auto;
+		}
+
+		
+		.news-post {
+			width: 75%;
+			height: auto;
+			margin: 30px auto;
+			border-radius: 10px;
+			border: 2px solid #0AA0A0;
 		}
 
 

@@ -1,0 +1,22 @@
+---
+layout: base.html
+title: News
+---
+
+<!--
+Team OKC Robotics "News" Page
+Last modified 9/14/2026 by Caleb Winterscheidt
+-->
+
+<h1>News</h1>
+
+<div>
+
+  {% for post in collections.news | reverse %}
+    <article class="news-post">
+        <h3>{{post.data.title}}</h3>
+        <p>{{post.content}}</p>
+    </article>
+  {% endfor %}
+
+</div>
